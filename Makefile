@@ -1,5 +1,3 @@
-# Makefile for a module-based C++ project on WSL with SFML
-
 # Compiler
 CXX = g++
 
@@ -13,7 +11,7 @@ LDFLAGS = -L/usr/lib/x86_64-linux-gnu -lsfml-graphics -lsfml-window -lsfml-syste
 TARGET = bin/main.exe
 
 # Directories
-MODULES = main States Assets Inputs Game
+MODULES = main States Assets Inputs Game Definitions
 OBJDIR = obj
 
 # Source and object files
