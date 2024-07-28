@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include "Definitions.hpp"
 
 namespace Ethan
@@ -42,7 +43,7 @@ namespace Ethan
 
             if (this->_data->input.IsSpriteClicked(this->_playButton, sf::Mouse::Left, this->_data->window))
             {
-                std::cout << "Pressed Button" << std::endl;
+                this->_data->machine.AddState(StateRef(new GameState( _data )), true);
             }
         }
     }
